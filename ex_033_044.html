@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register alumni</title>
+  </head>
+  <body>
+    <h1>ลงทะเบียนศิษย์เก่า IT + IS</h1>
+    <form action="https://www.example.com/" method="post">
+      <label for="username">ชื่อ-สกุล : </label>
+      <input
+        type="text"
+        name="username"
+        value=""
+        placeholder="กรุณากรอกชื่อ-สกุล"
+        size="30"
+        maxlength="50"
+      />
+      <br/>
+      <label for="student ID">รหัสนักศึกษา : </label>
+      <input
+        type="text"
+        name="student ID"
+        size="30"
+        maxlength="10"
+        placeholder="กรุณากรอกรหัสนักศึกษา"
+      />
+      <br />
+
+      <label for="gender">เพศ</label>
+      <input type="radio" name="gender" value="1" checked /> เพศชาย
+      <input type="radio" name="gender" value="2"/> เพศหญิง
+      <input type="radio" name="gender" value="9"/> เพศที่สาม
+
+      <br />
+      <label for="year">ปีการศึกษา : </label>
+      <input
+        type="text"
+        name="year"
+        size="30"
+        maxlength="4"
+        placeholder="กรุณากรอกปีการศึกษา"
+      />
+
+      <br />
+
+      <label for="address">ที่อยู่ : </label>
+      <textarea name="address" cols="30" rows="10">
+        
+      </textarea>
+
+      <br />
+      <label for="email">อีเมลล์ : </label>
+      <input
+        type="email"
+        name="email"
+        size="30"
+        placeholder="กรุณากรอกอีเมลล์" />
+
+      <br />
+      <label for="number">เบอร์โทรศัพท์ : </label>
+      <input
+        type="number"
+        name="number"
+        size="30"
+        maxlength="10"
+        placeholder="กรุณากรอกเบอร์โทรศัพท์" />
+
+        <br />
+        <label for="department">หลักสูตร : </label>
+        <select name="">
+          <option value="1">IT</option> 
+          <option value="2">IS</option>
+        </select>   
+
+        <br />
+      <label for="job">อาชีพ : </label>
+      <input
+        type="text"
+        name="job"
+        size="30"
+        placeholder="กรุณากรอกอาชีพ" />
+
+        <br />
+        <label for="company">ชื่อบริษัท : </label>
+        <input
+          type="text"
+          name="company"
+          size="30"
+          placeholder="กรุณากรอกชื่อบริษัท" 
+          />
+          <br />
+
+      <label for="address">ที่อยู่บริษัท : </label>
+      <textarea name="address" cols="30" rows="10"> 
+      </textarea>
+   
+      <br />
+      <label for="Type">ประเภทงานที่ทำ</label>
+      <input type="checkbox" name="type" /> Web Developer
+      <input type="checkbox" name="type" /> SA
+      <input type="checkbox" name="type" /> Graphic Design
+      <input type="checkbox" name="type" /> Digital Marketing
+
+      <br />
+      <label for="profilepic">Upload รูปถ่ายตัวเอง : </label>
+      <input type="file" name="profilepic" />
+
+      <br />
+      <input type="submit" value="ลงทะเบียน"/>
+      <input type="reset" value="ยกเลิก"/>
+    </form>
+  </body>
+</html>
