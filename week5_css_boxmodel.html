@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      h1 {
+        width: 150px;
+        padding: 10px;
+        border: 4px solid red;
+        margin: 30px;
+        background-color: yellow;
+      }
+      p {
+        width: 300px;
+        background-color: rgb(203, 255, 205);
+        border: 5px solid black;
+      }
+      span {
+        background-color: red;
+      }
+      .box01,
+      .box02 {
+        width: 300px ; margin: 20px; 
+      }
+      .box01{
+        background-color: rgb(214, 77, 168);
+        /*วิธีการกำหนดค่า ระยะห่าง ทั้ง 4 ด้าน margin padding*/
+        /*margin: 0px 0px 20px 0px;*/
+        /*margin: 10px 20px;*/
+        border: 5px solid red;
+      }
+      .box02{
+        background-color: rgb(144, 221, 29);
+        border: 5px solid blue;
+      }
+      li{
+        display: inline;
+        margin-right: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box Model</h1>
+    <p>
+      Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit.
+      Placeat eligendi, consectetur facere rerum dolorum voluptas aliquam
+      reiciendis quas! Corrupti assumenda quo autem nesciunt non explicabo vitae
+      blanditiis amet perspiciatis consequatur.
+    </p>
+
+    <div class="box01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+        aspernatur, omnis exercitationem ipsam autem suscipit reiciendis iusto
+        delectus repellat earum minima rerum molestiae non eius ipsa! Earum quis
+        impedit eligendi?</div>
+      
+    <div class="box02"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+        aspernatur, omnis exercitationem ipsam autem suscipit reiciendis iusto
+        delectus repellat earum minima rerum molestiae non eius ipsa! Earum quis
+        impedit eligendi?
+      </div> 
+
+      <ul>
+      <li>Box Model</li>
+      <li>CSS</li>
+      <li></li>
+    </ul>
+  </body>
+
+</html>
