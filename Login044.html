@@ -11,6 +11,7 @@
             color: red;
         }
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
@@ -18,31 +19,113 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(270deg, #fff 50%, #6c63ff 50%);
+  background-image: linear-gradient(270deg, #6c60ff 50%, #6c63ff 50%);
 }
-form{
-  text-align: center;
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.login1{
-  margin-top: 150px;
 
+.login {
+  position: relative;
+  width: 360px;
+  height: 480px;
+  background-color: #ffffff;
+  background-image: url('wave-svg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
+.login .form h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.login .form .inputlg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login .form .inputlg input {
+  width: 60%;
+  padding: 8px 10px;
+  backgroud: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2f2e41;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  padding-left: 35px;
+}
+
+.login .form .inputlg input[type="submit"] {
+  max-width: 100px;
+  background-color: #2f2e41;
+  color: #fff;
+  padding: 8px 10px;
+  font-wight: 500;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login .form .inputlg i {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  transform: scale(1.7);
+}
+
+.check {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login .form a {
+  color: #000;
+}
     </style>
 </head>
 <body>
-  <div class="login1">
-    <form action="">
-      <h2>Log In</h2>
-        <p>Username :</p>
-        <input type="text" id="username" />
-        <p id="errorUsername" class="error"></p>
-        <p>Password :</p>
-        <input type="password" id="password" />
-        <p id="errorPassword" class="error"></p>
-        <input type="submit" value="OK" />
-    </form>
-  </div>
+  <section>
+    <div class="login">
+      <div class="form">
+        <form action="">
+          <h2>Login</h2>
+          <p>Username</p>
+          <div class="inputlg">
+            <input type="text" id="username" placeholder="Username">
+            <p> id="errorUsername" class="error"</p>
+          </div>
+          <p>Password</p>
+          <div class="inputlg">
+            <input type="password" placeholder="password">
+            <p>id="errorPassword" class="error"</p>
+          </div>
+          <div class="inputlg" id="in">
+            <input type="submit" value="ok">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+ 
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
