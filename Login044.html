@@ -1,0 +1,80 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <style>
+        .error {
+            color: red;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(270deg, #fff 50%, #6c63ff 50%);
+}
+form{
+  text-align: center;
+}
+.login1{
+  margin-top: 150px;
+
+}
+
+    </style>
+</head>
+<body>
+  <div class="login1">
+    <form action="">
+      <h2>Log In</h2>
+        <p>Username :</p>
+        <input type="text" id="username" />
+        <p id="errorUsername" class="error"></p>
+        <p>Password :</p>
+        <input type="password" id="password" />
+        <p id="errorPassword" class="error"></p>
+        <input type="submit" value="OK" />
+    </form>
+  </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").onsubmit = function (event) {
+                let username = document.querySelector("#username").value;
+                let password = document.querySelector("#password").value;
+                
+                // ตรวจสอบความยาวของ username
+                let checkusername = username.length >= 8;
+                if (!checkusername) {
+                    document.querySelector("#errorUsername").innerHTML = "Username must be at least 8 characters";
+                } else {
+                    document.querySelector("#errorUsername").innerHTML = ""; // Clear error message
+                }
+                
+                // ตรวจสอบความยาวของ password
+                let checkpassword = password.length >= 8;
+                if (!checkpassword) {
+                    document.querySelector("#errorPassword").innerHTML = "Password must be at least 8 characters";
+                } else {
+                    document.querySelector("#errorPassword").innerHTML = ""; // Clear error message
+                }
+
+                // ถ้าทั้ง username และ password มีความยาวมากกว่าหรือเท่ากับ 8 ให้ส่งฟอร์ม
+                if (checkusername && checkpassword) {
+                    return true; // สั่งให้ Form Submit
+                } else {
+                    event.preventDefault(); // ไม่ส่งฟอร์ม
+                    return false;
+                }
+            };
+        });
+    </script>
+</body>
+</html>
