@@ -41,6 +41,7 @@ section {
 }
 form{
   text-align: center;
+  
 }
 #ok{
   background-color: #efff40;
@@ -75,25 +76,31 @@ h1{
                 let username = document.querySelector("#username").value;
                 let password = document.querySelector("#password").value;
                 
+                // ตรวจสอบความยาวของ username
                 let checkusername = username.length >= 8;
                 if (!checkusername) {
                     document.querySelector("#errorUsername").innerHTML = "Username must be at least 8 characters";
                 } else {
-                    document.querySelector("#errorUsername").innerHTML = ""; 
+                    document.querySelector("#errorUsername").innerHTML = ""; // Clear error message
                 }
+                
+                // ตรวจสอบความยาวของ password
                 let checkpassword = password.length >= 8;
                 if (!checkpassword) {
                     document.querySelector("#errorPassword").innerHTML = "Password must be at least 8 characters";
                 } else {
-                    document.querySelector("#errorPassword").innerHTML = ""; 
+                    document.querySelector("#errorPassword").innerHTML = ""; // Clear error message
                 }
+
+                // ถ้าทั้ง username และ password มีความยาวมากกว่าหรือเท่ากับ 8 ให้ส่งฟอร์ม
                 if (checkusername && checkpassword) {
-                    return true; 
+                    return true; // สั่งให้ Form Submit
                 } else {
-                    event.preventDefault();
+                    event.preventDefault(); // ไม่ส่งฟอร์ม
                     return false;
                 }
             };
+
             document.querySelector("#clickme").onclick = function () {
                 document.querySelector("h1").innerHTML = "Good Bye";
             };

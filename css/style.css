@@ -1,5 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
-body{
-    font-family: 'Kanit', sans-serif;
+.bg-body-tertiary{
+    background-color: #129fd2!important;
 }
+.navbar-brand,.navbar-expand-lg .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.btn{
+    background-color: #59d0f1;
+}
+.navbar-nav{
+    padding-left: 79%;
+}
+.btn,.col{
+    color: white;
+}
+.col{
+    margin-right: 0;
+    color: black;
+    padding: 0px;
+    display: flex;
+    flex-direction: column; /* จัดวางเนื้อหาในแนวตั้ง */
+    align-items: center; /* จัดวางตรงกลางในแนวนอน */
+    text-align: center; /* จัดวางเนื้อหาภายใน div ในแนวนอนตรงกลาง */
+}
+.color{
+    color: white;
+}
+.container-fluid{
+    padding: 0;
+}
+.navbar-brand{
+    padding-left: 10px;
+}
+.box2{
+    background-color: #59d0f1;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+.img{
+    width: 70px;
+    margin-bottom: 30px;
+}
+.img1{
+    width: 400px;
+    margin-bottom: 30px; 
+}
+.img2,.img3,.img4,.img5{
+    width: 50px;
+}
+.box3{
+    margin-top: 40px;
+}
+.aca{
+    text-align: center;
+    margin-bottom: -30px;
+}
+.end{
+    background-color: #129fd2;
+    height: 200px;
+    margin-top: 110px ;
+}
+  .a1 {
+    position: relative;
+    width: fit-content;
+    left: 250px;
+    top: 51px;
+    color: white;
+  }
+  .a2 {
+    position: relative;
+    left: 350px;
+    bottom: 30px;
+    width: fit-content;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .form-floating{
+    position: relative 0;
+    width: 400px;
+    left: 40%;
+    bottom: 110px;
+  }
+  .a3{
+    position: relative;
+    width: fit-content;
+    left: 78%;
+    bottom: 235px;
+    margin-top: 70px;
+  }
