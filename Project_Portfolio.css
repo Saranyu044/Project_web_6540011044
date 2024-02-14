@@ -1,0 +1,32 @@
+.intro-container{
+    max-height: 400px;
+}
+.About-Head{
+  max-width: 60%;
+}
+.name{
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+}
+.intro-card{
+   background-image: url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg);
+}
+.card-right{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+background-color: rgba(240, 248, 255, 0.664);
+}
+.card{
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg);
+    background-size: cover;
+    border: 0px;
+}
+.nav-link:hover{
+font-weight: bold;
+color: blueviolet !important;
+background-color: white;
+}
