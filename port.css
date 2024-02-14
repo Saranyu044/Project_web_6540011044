@@ -2,7 +2,7 @@
     background-color: #000000!important;
 }
 .navbar-brand,.navbar-expand-lg .navbar-nav .nav-link {
-    color: rgb(234, 255, 1);
+    color: rgb(200, 215, 28);
 }
 .btn{
     background-color: #4a4a4a;
@@ -12,7 +12,7 @@
     padding-left: 79%;
 }
 .btn,.col{
-    color:  rgb(234, 255, 1);
+    color:  rgb(200, 215, 28);
 }
 .col{
     margin-right: 0;
@@ -24,7 +24,7 @@
     text-align: center; 
 }
 .color{
-    color: rgb(234, 255, 1);
+    color: rgb(200, 215, 28);
 }
 .container-fluid{
     padding: 0;
@@ -33,7 +33,7 @@
     padding-left: 10px;
 }
 .box2{
-    background-color: rgb(234, 255, 1);
+    background-color: rgb(200, 215, 28);
     color: black ;
 }
 .img{
@@ -50,7 +50,7 @@
 }
 .box3{
     background-color: #000000;
-    color: rgb(234, 255, 1);
+    color: rgb(200, 215, 28);
     text-align: center;
 }
 .aca{
@@ -58,7 +58,7 @@
     margin-bottom: -10px;
 }
 .end{
-    background-color: rgb(234, 255, 1);
+    background-color: rgb(200, 215, 28);
     height: 200px;
 }
   .a1 {
@@ -103,19 +103,19 @@
     background-color: #000000;
   }
   #name{
-    color: rgb(234, 255, 1);
+    color: rgb(200, 215, 28);
     font-size: 50px;
     font-weight: bold;
   }
   #name2{
-    color: rgb(234, 255, 1);
+    color: rgb(200, 215, 28);
     font-size: 20px;
   }
  #record{
     color: #000000;
   }
   #ex3{
-    color: rgb(234, 255, 1)0;
+    color: rgb(200, 215, 28);
   }
   #Bx3{
     margin-bottom: 50px;
