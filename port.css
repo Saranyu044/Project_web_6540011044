@@ -134,6 +134,16 @@
     margin-right: 20px;
     text-align: center;
  }
+ .naverbercolor:hover{
+font-weight: bold;
+color: #b0fb02 !important;
+background-color: #4a4a4a;
+ }
+ #bt:hover{
+  font-weight: bold;
+  color: #a6dd27 !important;
+  background-color: #474343;
+ }
 
 
 
