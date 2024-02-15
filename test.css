@@ -1,0 +1,39 @@
+/* Project_Portfolio.css */
+
+/* General Styles */
+body {
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.text-bg-dark {
+    color: #212529;
+    background-color: #343a40;
+}
+
+.intro-container {
+    display: flex;
+    height: 800px;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro-container {
+        height: auto;
+    }
+}
