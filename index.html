@@ -1,220 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WebProgramming Portfolio :044</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="port.css" />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming : Portfolio 6540011044</title>
+    <!-- bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Project_Portfolio..css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header></header> -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand pg" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exercies">Exercies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <script>
+                    const header = document.querySelector('.navbar');
+
+                    window.onscroll = function() {
+                    var top = window.scrollY;
+                    if(top >=100) {
+                     header.classList.add('navbarDark');
+                  }
+                    else {
+                     header.classList.remove('navbarDark');
+                }
+}
+                </script>
+                
+            </div>
+           
+        </div>
+        <div class="text-end">
+            <div class="dropdown text-end">
+                <a href="#" class="down d-block link-body-emphasis text-decoration-none dropdown-toggle text-white"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="imageport/319430549_1826605714366265_4797524514331386002_n.jpg" alt="mdo" width="32" height="32"
+                        class="rounded-circle " style="object-fit: contain; background-color: white;">
+                </a>
+                <ul class="dropdown-menu text-small">
+                    <li><a class="dropdown-item" href="https://www.facebook.com/slow.pee.94" target="_blank">Face Book</a></li>
+                    <li><a class="dropdown-item" href="https://www.instagram.com/saran.p_/">IG</a></li>
+                    <li><a class="dropdown-item" href="">0991102646</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- intro -->
+    <section class="bgimage" id="home">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Saranyu Churak</a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active naverbercolor " aria-current="page" href="#name">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link naverbercolor" href="#record">RECORD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link naverbercolor" href="#homework">EXERCISE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link naverbercolor" href="#contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="box1">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-4">
-          <img src="imageport/me.jpg" class="img-fluid rounded mx-auto d-block" width="350px" height="400px" id="imageme">
-        </div>
-        <div id="Saran" class="col-8">
-          <h1 class="pt-5" id="name">Saranyu Churak.</h1>
-          <p id="name2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veniam
-            ab rerum libero recusandae. Maxime, sint? Sit et excepturi iste?
-            Placeat facilis minima commodi delectus doloribus quibusdam iste nam
-            velit?
-          </p>
-          <button type="button" class="btn myBtn" id="bt">My Exercise</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="box2">
-      <h2 class="text-center py-3" id="record">RECORD</h2>
-      <div class="container-fluid">
-        <div class="row portfolio mt-2 ms-0 me-0 headerVSpace">
-          <div class="col">
-            <div class="color">
-              <img class="img" src="imageport/home-address.png" alt="" />
-              <h3 class="text-center" id="record">Address</h3>
-              <p class="text-center" id="record">
-                Thung Tao Mai Subdistrict, Ban Na San District, Surat Thani
-                Province.
-              </p>
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Saranyu Churak</h2>
+                <p class="hero_desc">I am a student of Prince of Songkla University</p>
             </div>
-          </div>
-
-          <div class="col">
-            <div class="color">
-              <img class="img" src="imageport/edit.png" alt="" />
-              <h3 class="text-center" id="record">Educational Record</h3>
-              <p class="text-center" id="record">
-                Studied in middle school to high school at Patchara School.
-              </p>
             </div>
-          </div>
-
-          <div class="col">
-            <div class="color">
-              <img class="img" src="imageport/open-book.png" alt="" />
-              <h3 class="text-center" id="record">Current Education</h3>
-              <p class="text-center" id="record">
-                Bachelor's Degree at Prince of Songkla University, Surat Thani
-                Campus Information Technology branch
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="box3">     
-      <div class="container-fluid ">
-        <div class="row">
-            <h2 id="homework" class="text-center">Exercise</h2>
-            <div class="col col-lg-4 d-flex justify-content-center mb-3 ">
-              <div class="card" style="width: 18rem;">
-                <img src="imageport/web2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Exercise 1</h5>
-                  <p class="card-text">สถาปัตยกรรมของเทคโนโลยี</p>
-                  <a href="https://www.canva.com/design/DAF0zx4Pdsg/uE-Bj_Hs01AxAxWZ2Xmm1A/edit?utm_content=DAF0zx4Pdsg&utm_
-                  campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-primary">Check Homework</a>
+    </section>
+    <!-- about me -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center " ">
+                <div class="About-Head">
+                    <h1 class="fontab text-center " id="about">About ME</h1>
                 </div>
             </div>
+            <div>
+                <p class="ab text-center">
+                    My name is Mr. Saranyu Churak. I am in the second year of study. Information Technology branch
+                </p>
             </div>
-                
-            <div class=" col col-lg-4 d-flex justify-content-center mb-3">
-              <div class="card" style="width: 18rem;">
-                <img src="imageport/food2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Exercise 2</h5>
-                  <p class="card-text">สร้างเว็บเพจเมนูอาหารที่ท่านชื่นชอบ<br></p>
-                  <a href="Food/food.html" class="btn btn-primary">Check Homework</a>
+            <div class="d-flex justify-content-center mt-3">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 intro-card rounded-5 d-flex justify-content-center"
+                    style="min-width: 80%;">
+                    <div class="col-lg-4 slide">
+                        <figure class="mt-4 rights">
+                            <img src="imageport/Me01.jpg" alt="">
+                            <img src="imageport/Me02.jpg" alt="">
+                            <img src="imageport/Me03.jpg" alt="">
+                            <img src="imageport/M04.jpg" alt="">
+                            <img src="imageport/Me01.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 p-4 d-flex flex-column position-static p-3">
+                        <div class="card-right p-3 rounded-5">
+                            <h1 class="name fs-1">Hello</h1>
+                            <h1 class="name fs-3">My Name Is <span class="text-primary">Saranyu Churak</span></h1>
+                            <p>Age : 20</p>
+                            <p>Birthday: October 3, 2003</p>
+                            <p>Email : Sarnyuchurak@gmail.com</p>
+                            <p>FaceBook : Saranyu Churak</p>
+                            <p>Current level of education : Bachelor's degree</p>
+                            <p>Aptitude : Data analysis,Page design</p>
+                            <p>Health : Healthy</p>
+                            <p>Address : House number 187/7 Village No. 4, Thung Tao Mai Subdistrict Ban Na San District Surat Thani
+                                Province</p>
+                            
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
+
+        </div>
+    </div>
+    <!-- Exercies --> 
+    <div class="container-fluid bgex py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center text-white mb-3">
+                <div class="About-Head">
+                    <h1 class="text-center Exerciesbg" id="exercies">Exercies</h1>
+                </div>
             </div>
-                
-              <div class="col col-lg-4 d-flex justify-content-center mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="imageport/form2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Exercise 3</h5>
-                    <p class="card-text">ฟอร์มลงทะเบียนศิษย์เก่า IT + IS<br></p>
-                    <a href="Portfolio/port.html" class="btn btn-primary">Check Homework</a>
-                  </div>
-              </div>
-              </div>
-                
-              <div class="col col-lg-4 d-flex justify-content-center mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="imageport/bootstap2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Exercies 4</h5>
-                    <p class="card-text">Bootstrap</p>
-                    <a href="bootstrap.html" class="btn btn-primary">Check Homework</a>
-                  </div>
-              </div>
-              </div>
+            <div class="row">
+                    <div class="col col-lg-4 d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imageport/imade01.jpg " alt="" class="card-img-top">
+                            <div class="card-body bgcard">
+                              <h5 class="card-title">Exercise 1</h5>
+                              <p class="card-text">Architecture Of Technology.</p>
+                              <a href="https://www.canva.com/design/DAF0zx4Pdsg/uE-Bj_Hs01AxAxWZ2Xmm1A/edit?utm_content=DAF0zx4Pdsg&utm_
+                              campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-primary">Check Exercies</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col col-lg-4  d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imageport/food03.jpg" alt="" class="card-img-top">
+                            <div class="card-body bgcard">
+                              <h5 class="card-title">Exercise 2</h5>
+                              <p class="card-text">My Favorite Food Menu.</p>
+                              <a href="Food/food.html" class="btn btn-primary">Check Exercies</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col col-lg-4  d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imageport/formimage.jpg" alt="" class="card-img-top">
+                            <div class="card-body bgcard">
+                              <h5 class="card-title">Exercise 3</h5>
+                              <p class="card-text">IT + IS Alumni Registration Form.</p>
+                              <a href="Portfolio/port.html" class="btn btn-primary">Check Exercies</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col col-lg-4  d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imageport/bootstap.jpg" alt="" class="card-img-top">
+                            <div class="card-body bgcard">
+                              <h5 class="card-title">Exercies 4</h5>
+                              <p class="card-text">Bootstrap.</p>
+                              <a href="bootstrap.html" class="btn btn-primary">Check Exercies</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col col-lg-4  d-flex justify-content-center mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imageport/imagelogin.jpg" alt="" class="card-img-top">
+                            <div class="card-body bgcard">
+                              <h5 class="card-title">Exercies 5</h5>
+                              <p class="card-text">Check Form Login.</p>
+                              <a href="Check Form Login 6540011044.html" class="btn btn-primary">Check Exercies </a>
+                            </div>
+                          </div>
+                    </div>
 
-              <div class="col col-lg-4 d-flex justify-content-center mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="imageport/lodin2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Exercies 5</h5>
-                    <p class="card-text">Login</p>
-                    <a href="Check Form Login 6540011044.html" class="btn btn-primary">Check Homework</a>
-                  </div>
-              </div>
-              </div>
-                
+            </div>
+
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="container justify-content-center">
+           <h1 class="contact mt-5" id="contact">Contact</h1>
+        <div class="row portfolio mt-0 ms-0 me-0 headerVSpace justify-content-center">
+          <div class="col-sm-2 col-md-2 mt-5 imagecontact ">
+            <a href="https://web.facebook.com/slow.pee.94/"> <img class="img2" src="imageport/facebook (2).png" alt="">
+            </a>
+            <h5 class="hd">Facebook :</h5>
+            <a class="aa" href="https://web.facebook.com/slow.pee.94/">Saranyu Churak</a>
+          </div>
+          <div class="col-sm-2 col-md-2 mt-5 imagecontact">
+            <a href="#"> <img class="img2" src="imageport/line (1).png" alt="">
+            </a>
+            <h5 class="hd">Line ID:</h5>
+            <a class="aa" href="#"">0951043366</a>
+          </div>
+          <div class="col-sm-2 col-md-2 mt-5 imagecontact">
+            <a href="https://www.instagram.com/saran.p_/"> <img class="img2" src="imageport/instagram (1).png" alt="">
+            </a>
+            <h5 class="hd">instagram :</h5>
+            <a class="aa" href="https://www.instagram.com/saran.p_/">saran.p_</a>
         </div>
-      </div>
+        <div class="col-sm-2 col-md-2 mt-5 imagecontact">
+          <a href="https://mail.google.com/mail/u/0/#inbox"> <img class="img2" src="imageport/gmail.png" alt="">
+          </a>
+            <h5 class="hd">Email :</h5>
+            <a class="aa" href="https://mail.google.com/mail/u/0/#inbox">6540011044@email.psu.ac.th</a>
+        </div>
+        <div class="col-sm-2 col-md-2 mt-5 imagecontact">
+            <a href="#"> <img class="img2" src="imageport/telephone-call.png" alt="">
+            </a>
+              <h5 class="hd">Phone :</h5>
+              <a class="aa" href="#">0991102646</a>
+          </div>
+        </div>
+        </div>
     </div>
+              </div>
+              <div class="text-center text-body-secondary mt-5"> <p >© Information Technology branch.</p>
+            </div>
+        </footer>
+</body>
 
-    <div class="end" id="contact">
-      <div class="a1">
-        <h6>Home :</h6>
-        <h6>Learning :</h6>
-        <h6>Research :</h6>
-      </div>
-      <div class="a2">
-        <h6>Academic</h6>
-        <h6>About</h6>
-        <h6>Contact</h6>
-      </div>
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea2"
-          style="height: 30px"
-        ></textarea>
-        <label for="floatingTextarea2">Comments</label>
-      </div>
-      <div class="a3">
-        <img class="img2" src="/image/facebook (1).png" alt="" />
-        <img class="img2" src="/image/instagram (1).png" alt="" />
-        <img class="img2" src="/image/twitter.png" alt="" />
-        <img class="img2" src="/image/telegram.png" alt="" />
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
